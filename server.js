@@ -107,6 +107,8 @@ let NPCData = {
     }
 }
 app.get('/data', (req, res) => {
+    res.setHeader("Access-Control-Allow-Origin", "*")
+    res.setHeader("Access-Control-Allow-Credentials", true)
     console.log('asdasdasda');
     res.json(NPCData);
 })
