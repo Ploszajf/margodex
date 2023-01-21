@@ -107,6 +107,7 @@ let NPCData = {
     }
 }
 app.get('/data', (req, res) => {
+    console.log('asdasdasda');
     res.json(NPCData);
 })
 
