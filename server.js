@@ -116,5 +116,5 @@ app.get('/data', (req, res) => {
 app.use(cors({ origin: 'https://lelwani.margonem.pl' }))
 app.use(express.static("static"))
 app.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+    console.log(`Serverasdas running at http://${hostname}:${port}/`);
 });
