@@ -1,5 +1,6 @@
 const express = require("express")
 const http = require("http")
+const cors = require("cors")
 
 const hostname = '0.0.0.0';
 const port = process.env.PORT || 3000
@@ -108,6 +109,8 @@ let NPCData = {
 app.get('/data', (req, res) => {
     res.json(NPCData);
 })
+
+app.use(cors({ origin: 'https://lelwani.margonem.pl' }))
 app.use(express.static("static"))
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
