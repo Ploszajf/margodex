@@ -113,7 +113,7 @@ app.get('/data', (req, res) => {
     res.json(NPCData);
 })
 
-app.use(cors({ origin: 'https://lelwani.margonem.pl' }))
+app.use(cors())
 app.use(express.static("static"))
 app.listen(port, hostname, () => {
     console.log(`Serverasdas running at http://${hostname}:${port}/`);
